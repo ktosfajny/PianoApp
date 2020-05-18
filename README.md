@@ -1,6 +1,6 @@
 # PianoApp
 
-ogólna zasada działania jest taka, że tworzona jest jedna zmienna Media Player, do której w chwili naciśnięcia klawisza przypisywany jest konkretny dźwięk w zależności od tego jaki klawisz został naciśnięty.
+ogólna zasada działania jest taka, że tworzona jest jedna zmienna mPlayer (którą jest de faco Media Player), do której w chwili naciśnięcia klawisza przypisywany jest konkretny dźwięk w zależności od tego jaki klawisz został naciśnięty.
 - cały kod dzieje się w MainActiviy
 - funkcje obsługujące apkę są przypisywane do konkretnego kalwisza w pliku activity_main.xml, np:  android:onClick="play_whiteKey_3"
 
