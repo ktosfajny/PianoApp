@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#134672</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#A4DEFC</color>
+
+    <color name="whiteKey_down">#C2C2C2</color>
+    <color name="whiteKey_up">@android:color/white</color>
+
+    <color name="blackKey_down">#353535</color>
+    <color name="blackKey_up">#000000</color>
+</resources>

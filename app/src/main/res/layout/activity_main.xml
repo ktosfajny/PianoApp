@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/pianoBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.9">
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DIGITAL PIANO"
+                    android:textStyle="italic"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#B9A2A2"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change sound"
+                        android:textColor="#000"
+                        android:id="@+id/switchXML"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+<!--    PONIZEJ JEST KOD DO BIALYCH KLAWISZY -->
+    <RelativeLayout
+        android:layout_below="@+id/pianoBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/whiteKey_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_1"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/whiteKey_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_2"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/whiteKey_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_3"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/whiteKey_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_4"
+                    android:background="@android:color/white"/>
+
+                <View
+                    android:id="@+id/whiteKey_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_5"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/whiteKey_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_6"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/whiteKey_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_7"
+                    android:background="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/whiteKey_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_8"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/whiteKey_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_9"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/whiteKey_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_10"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/whiteKey_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_11"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/whiteKey_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_12"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/whiteKey_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_13"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:id="@+id/whiteKey_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:onClick="play_whiteKey_14"
+                    android:background="@android:color/white" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+<!--        CZARNE KLAWISZE PONIZEJ-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="0.5">
+
+                <View
+                    android:id="@+id/blackKey_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:onClick="play_blackKey_1"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <View
+                    android:id="@+id/blackKey_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:onClick="play_blackKey_2"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.5">
+
+                <View
+                    android:id="@+id/blackKey_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:onClick="play_blackKey_3"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <View
+                    android:id="@+id/blackKey_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:onClick="play_blackKey_4"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimaryDark" />
+
+                <View
+                    android:id="@+id/blackKey_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:onClick="play_blackKey_5"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimaryDark" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="0.5">
+
+                <View
+                    android:id="@+id/blackKey_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:onClick="play_blackKey_6"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <View
+                    android:id="@+id/blackKey_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:onClick="play_blackKey_7"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.5">
+
+                <View
+                    android:id="@+id/blackKey_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:onClick="play_blackKey_8"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <View
+                    android:id="@+id/blackKey_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:onClick="play_blackKey_9"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimaryDark" />
+
+                <View
+                    android:id="@+id/blackKey_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:onClick="play_blackKey_10"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimaryDark" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
